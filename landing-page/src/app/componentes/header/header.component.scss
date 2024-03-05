@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 40px 0 40px;
+  
+  ul {
+    list-style: none;
+  }
+  .header-top-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation 
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon-container {
+    display: none;
+  }
+}
