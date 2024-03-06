@@ -12,6 +12,9 @@ header .header-top-container {
   display: flex;
   justify-content: space-between;
 }
+header .header-top-container .logo {
+  width: 60px;
+}
 header .navigation {
   display: flex;
   flex-direction: column;

@@ -11,6 +11,9 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    .logo {
+      width: 60px;
+    }
   }
   .navigation 
   {
