@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 40px 0 40px;
+}
+header ul {
+  list-style: none;
+}
+header .header-top-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .navigation {
+  display: flex;
+  flex-direction: column;
+}
+header .icon-container {
+  display: none;
+}/*# sourceMappingURL=index.css.map */
