@@ -6,6 +6,33 @@ header {
   background-color: DarkSlateGray;
   color: LightGray;
 }
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    padding-right: 30px;
+    align-items: center;
+  }
+  header .header-top-container {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  header .header-top-container .logo {
+    width: 60px;
+  }
+  header .header-top-container button {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (min-width: 992px) {
+  header .header-top-container button {
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) {
+  header .nav {
+    display: none;
+  }
+}
 header ul {
   list-style: none;
 }
@@ -13,6 +40,12 @@ header .header-top-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+@media (min-width: 768px) {
+  header .header-top-container {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 header .header-top-container .logo {
   width: 60px;
@@ -30,12 +63,38 @@ header .header-top-container button:hover {
 header .header-top-container button:active {
   color: SlateGrey;
 }
+@media (min-width: 992px) {
+  header .header-top-container button {
+    display: none;
+  }
+}
 header .nav {
   display: none;
 }
+@media (min-width: 768px) {
+  header .nav {
+    display: flex;
+  }
+  header .nav .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    justify-content: space-around;
+  }
+  header .nav .menu li {
+    margin-right: 45px;
+  }
+  header .nav .menu li:hover {
+    background-color: SlateGrey;
+  }
+  header .nav .menu li:active {
+    background-color: DarkSlateGrey;
+  }
+}
 header .nav.visible {
   display: flex;
-  width: 100%;
+  width: 90%;
   align-self: center;
   justify-content: center;
 }
@@ -55,4 +114,20 @@ header .nav.visible .menu li:hover {
 }
 header .icon-container {
   display: none;
+}
+@media (min-width: 768px) {
+  header .icon-container {
+    display: flex;
+    font-size: 35px;
+  }
+  header .icon-container ul {
+    display: flex;
+  }
+  header .icon-container ul i {
+    color: LightGray;
+    margin-right: 10px;
+  }
+  header .icon-container ul i:hover {
+    color: SlateGrey;
+  }
 }/*# sourceMappingURL=index.css.map */
