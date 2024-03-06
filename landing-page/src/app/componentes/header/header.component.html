@@ -5,11 +5,11 @@
       class="logo"
       src="https://freeiconshop.com/wp-content/uploads/edd/image-outline-filled.png"
       alt="logo">
-      <button>
+      <button (click)="toggleMenu()">
           <i class="fa-solid fa-bars"></i>
       </button>
     </div>
-    <nav class="nav">
+    <nav class="nav" [ngClass]="{'visible': isMenuVisible}">
         <ul class="menu">
             <li>Início</li>
             <li>Sobre Nós</li>
