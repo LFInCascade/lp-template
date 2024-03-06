@@ -4,6 +4,7 @@ header {
   justify-content: space-between;
   padding: 20px 40px 0 40px;
   background-color: DarkSlateGray;
+  color: LightGray;
 }
 header ul {
   list-style: none;
@@ -20,7 +21,11 @@ header .header-top-container button {
   width: 60px;
   font-size: 25px;
   border: none;
-  background-color: SlateGrey;
+  background-color: DarkSlateGray;
+  color: LightGray;
+}
+header .header-top-container button:hover {
+  color: Darkgrey;
 }
 header .navigation {
   display: flex;

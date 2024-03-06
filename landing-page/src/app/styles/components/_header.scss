@@ -4,7 +4,8 @@ header {
   justify-content: space-between;
   padding: 20px 40px 0 40px;
   background-color: $secondary;
-  
+  color: $third;
+
   ul {
     list-style: none;
   }
@@ -20,7 +21,11 @@ header {
       width: 60px;
       font-size: 25px;
       border: none;
-      background-color: $primary;
+      background-color: $secondary;
+      color: $third;
+      &:hover {
+        color: $fifth ;
+      }
     }
   }
   .navigation 
