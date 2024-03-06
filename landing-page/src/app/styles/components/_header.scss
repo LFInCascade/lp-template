@@ -3,16 +3,24 @@ header {
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 40px 0 40px;
+  background-color: $secondary;
   
   ul {
     list-style: none;
   }
+
   .header-top-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
     .logo {
       width: 60px;
+    }
+    button {
+      width: 60px;
+      font-size: 25px;
+      border: none;
+      background-color: $primary;
     }
   }
   .navigation 

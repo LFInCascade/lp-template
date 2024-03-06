@@ -3,6 +3,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 40px 0 40px;
+  background-color: DarkSlateGray;
 }
 header ul {
   list-style: none;
@@ -14,6 +15,12 @@ header .header-top-container {
 }
 header .header-top-container .logo {
   width: 60px;
+}
+header .header-top-container button {
+  width: 60px;
+  font-size: 25px;
+  border: none;
+  background-color: SlateGrey;
 }
 header .navigation {
   display: flex;
