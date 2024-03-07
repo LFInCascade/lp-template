@@ -1,15 +1,22 @@
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px 40px 0 40px;
-  background-color: $secondary-color;
   color: $third-color;
+  display: flex;
+  align-items:  center ;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $secondary-color;
+  position: fixed; 
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
 
   @include mq(m) {
+    justify-content: space-between;
+
     flex-direction: row; 
-    padding-right: 30px;
-    align-items: center;
+    height: 100px;
+    padding: 0px;
+
 
   button {
     display: none; 
@@ -35,12 +42,18 @@ header {
 
     .logo {
       width: 60px;
+      margin-left: 50px;
+      @include mq(m) {
+        margin-left: 50px;
+        
+          }
     }
 
     button {
       width: 60px;
       font-size: 25px;
       border: none;
+      margin-right: 40px;
       background-color: $secondary-color;
       color: $third-color;
       &:hover {
@@ -108,6 +121,7 @@ header {
     @include mq(m) {
       display: flex;
       font-size: 35px;
+      margin-right: 60px;
       ul {
         display: flex;
         i {
