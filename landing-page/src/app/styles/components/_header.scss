@@ -3,14 +3,17 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 40px 0 40px;
   background-color: $secondary-color;
   position: fixed; 
+  width: 100%;
+  padding: 20px;
 
   @include mq(m) {
     flex-direction: row; 
-    padding-right: 30px;
+    height: 100px;
     align-items: center;
+    padding: 0px;
+
 
   button {
     display: none; 
@@ -36,12 +39,14 @@ header {
 
     .logo {
       width: 60px;
+      margin-left: 35px;
     }
 
     button {
       width: 60px;
       font-size: 25px;
       border: none;
+      margin-right: 35px;
       background-color: $secondary-color;
       color: $third-color;
       &:hover {
@@ -109,6 +114,7 @@ header {
     @include mq(m) {
       display: flex;
       font-size: 35px;
+      margin-right: 60px;
       ul {
         display: flex;
         i {
