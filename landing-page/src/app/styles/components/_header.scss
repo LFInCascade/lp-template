@@ -1,17 +1,19 @@
 header {
   color: $third-color;
   display: flex;
+  align-items:  center ;
   flex-direction: column;
   justify-content: space-between;
   background-color: $secondary-color;
   position: fixed; 
   width: 100%;
-  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 
   @include mq(m) {
     flex-direction: row; 
     height: 100px;
-    align-items: center;
+    justify-content: center;
     padding: 0px;
 
 
@@ -39,14 +41,18 @@ header {
 
     .logo {
       width: 60px;
-      margin-left: 35px;
+      margin-left: 50px;
+      @include mq(m) {
+        margin-left: 50px;
+        
+          }
     }
 
     button {
       width: 60px;
       font-size: 25px;
       border: none;
-      margin-right: 35px;
+      margin-right: 40px;
       background-color: $secondary-color;
       color: $third-color;
       &:hover {
