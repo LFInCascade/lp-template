@@ -1,15 +1,16 @@
-$primary : SlateGrey;
+$primary-color : SlateGrey;
 
-$secondary : DarkSlateGray;
+$secondary-color : DarkSlateGray;
 
-$third : LightGray; 
-$fourth : DarkSlateGrey;
+$third-color : LightGray;
 
-$fifth : Darkgrey;
+$fourth-color : DarkSlateGrey;
+
+$fifth-color : Darkgrey;
 
 $breakpoints : (
-  s: 576px,
-  m: 768px,
-  l : 992px,
-  xs: 1250px,
+  "s": 576px,
+  "m": 768px,
+  "l": 992px,
+  "xs": 1250px,
 );

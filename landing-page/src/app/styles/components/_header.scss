@@ -3,32 +3,22 @@ header {
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 40px 0 40px;
-  background-color: $secondary;
-  color: $third;
+  background-color: $secondary-color;
+  color: $third-color;
 
   @include mq(m) {
     flex-direction: row; 
     padding-right: 30px;
     align-items: center;
 
-    .header-top-container {
-      width: fit-content;
-
-      .logo {
-        width: 60px;
-      }
-
-      button {
-        display: none; // Oculta o botão em telas médias
-        @include mq(l) {
-          display: inline-block; // Exibe o botão em telas grandes (l)
+  button {
+    display: none; 
+    @include mq(l) {
+      display: flex;
         }
       }
     }
 
-    .nav {
-      display: none;
-    }
   }
 
   ul {
@@ -51,13 +41,13 @@ header {
       width: 60px;
       font-size: 25px;
       border: none;
-      background-color: $secondary;
-      color: $third;
+      background-color: $secondary-color;
+      color: $third-color;
       &:hover {
-        color: $fifth ;
+        color: $fifth-color ;
       }
       &:active {
-        color: $primary;
+        color: $primary-color;
       }
       @include mq(l) {
         display: none;  
@@ -80,10 +70,10 @@ header {
         li {
           margin-right: 45px; 
           &:hover {
-            background-color: $primary;
+            background-color: $primary-color;
           }
           &:active {
-            background-color: $fourth;
+            background-color: $fourth-color;
           }
         }
       }
@@ -107,7 +97,7 @@ header {
         margin-bottom: 10px;
         width: 100%;
         &:hover {
-          background-color: $primary;
+          background-color: $primary-color;
         }
       }
     }
@@ -121,13 +111,13 @@ header {
       ul {
         display: flex;
         i {
-          color: $third;
+          color: $third-color;
           margin-right: 10px;
           &:hover{
-            color: $primary;
+            color: $primary-color;
           }
         }
       }
     }
   }
-}
+
