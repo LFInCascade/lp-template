@@ -1,11 +1,11 @@
 header {
+  color: $third-color;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 40px 0 40px;
   background-color: $secondary-color;
-  color: $third-color;
-  position: fixed;
+  position: fixed; 
 
   @include mq(m) {
     flex-direction: row; 
