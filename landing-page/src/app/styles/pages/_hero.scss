@@ -1,8 +1,15 @@
 .hero-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding-top: 150px;
   background-color: $third-color; //mudar conforme necessidade
+  .right-container {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
   .text-container {
     display: flex;
     flex-direction: column;
