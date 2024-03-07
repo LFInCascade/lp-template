@@ -5,6 +5,7 @@ header {
   padding: 20px 40px 0 40px;
   background-color: $secondary-color;
   color: $third-color;
+  position: fixed;
 
   @include mq(m) {
     flex-direction: row; 
