@@ -3,7 +3,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background-color: $fifth-color;
+    background-color: $primary-color;
     padding-top: 35px;
 
     .text-container {
@@ -24,10 +24,10 @@
         margin: auto;
         margin-top: 10px;
         font-size: 25px;
+        margin-bottom: 80px;
         @include mq(m) {
             width: 50%;
             font-size: 35px;
-            margin-bottom: 80px;
           }
       } 
     }
