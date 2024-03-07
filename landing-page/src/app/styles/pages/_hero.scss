@@ -23,5 +23,25 @@
       font-size: 20px;
       margin-bottom: 15px;
     }
+    
+    button {
+      background-color: $fourth-color;
+      border: none;
+      border-radius: 15px;
+      font-size: 25px;
+      font-weight: 900;
+      width: 200px;
+      height: 70px;
+      color: $fifth-color;
+      margin-bottom: 25px;
+      &:hover {
+        background-color: $secondary-color;
+        color: $primary-color;
+      }
+      &:active {
+        background-color: $fifth-color;
+        color: $third-color;
+      }
+    }
   }
 }
